@@ -1,0 +1,9 @@
+<h1 class="mb-4 border-bottom border-secondary"><%= @task.title %></h1>
+
+<p><%= @task.details %></p>
+<input type="checkbox" name="checkbox" <%= @task.completed ? "checked" : "" %> />
+
+
+<p class="mt-4"><%= link_to "Edit task", task_edit_path(@task) %></p>
+
+<p class="mt-4"><%= link_to "Back to tasks list", tasks_path %></p>

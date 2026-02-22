@@ -1,0 +1,21 @@
+<h1 class="mb-4 border-bottom border-secondary">Edit task</h1>
+
+<%= form_with model:@task do |f| %>
+  <div class="d-flex flex-column">
+    <div class="p-2">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    </div>
+    <div class="p-2">
+    <%= f.label :details %>
+    <%= f.text_area :details %>
+    </div>
+    <div class="p-2">
+    <%= f.label :completed, "Completed" %>
+    <%= f.check_box :completed %>
+    </div>
+    <div class="p-2">
+    <%= f.submit %>
+    </div>
+  </div>
+<% end %>
