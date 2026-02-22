@@ -7,3 +7,14 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+# TASKS
+# title, as a string
+# details, as a text
+# completed, as a boolean (default: false)
+
+Task.create([
+  { title: 'Cleaning', details: 'Bathroom, dining room' },
+  { title: 'Learning Rails', details: 'Do the 2 past lessons exercices and watch next lecture' },
+  { title: 'Walking', details: 'Go for a 30 mn walk around the house' }
+])
